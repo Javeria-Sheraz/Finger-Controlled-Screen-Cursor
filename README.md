@@ -20,17 +20,22 @@ Built using **OpenCV**, **MediaPipe**, **Autopy**, and **PyAutoGUI** libraries, 
 
    ```
    git clone https://github.com/Javeria-Sheraz/Finger-Controlled-Screen-Cursor.git
+   ```
+
+### 3. Change the directory:
+
+   ```
    cd Finger-Controlled-Screen-Cursor
    ```
 
-### 3. Create a virtual environment:
+### 4. Create a virtual environment:
 
 ```
 python -m venv venv
 ```
 Ensure the venv folder is created in the cloned repo folder
 
-### 4. Activate the environment (for CMD terminal):
+### 5. Activate the environment (for CMD terminal):
 
 ```
 venv\Scripts\activate
@@ -43,12 +48,12 @@ Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 .\venv\Scripts\Activate.ps1
 ```
 
-### 5. Ensure `required_libraries.txt` is in the same folder. Install the required libraries:
+### 6. Ensure `required_libraries.txt` is in the same folder. Install the required libraries:
 
 ```
 pip install -r required_libraries.txt
 ```
-### 6. Run the main file:
+### 7. Run the main file:
 
 ```
 python screenmouse.py
