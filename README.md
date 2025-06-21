@@ -1,78 +1,60 @@
-# Finger-Controlled-Screen-Cursor
-
-Sure! Here's a complete **GitHub README** for your **Finger-Controlled Screen Cursor** project, styled similarly to your [Volume Control project README](https://github.com/Javeria-Sheraz/Controlling-system-volume-with-fingers):
-
----
-
 # Finger-Controlled Screen Cursor 🎯🖐️
 
 Control your computer's **mouse cursor, click**, and even **scroll** — just by using hand gestures in the air!
-Built using **OpenCV**, **MediaPipe**, **Autopy**, and **PyAutoGUI**, this project leverages computer vision to offer a touchless interface using finger tracking.
+Built using **OpenCV**, **MediaPipe**, **Autopy**, and **PyAutoGUI** libraries, this project leverages computer vision to offer a touchless interface using finger tracking.
 
-## 🔗 Repository
+## ✨ Features/Instructions
 
-[Finger-Controlled Screen Cursor GitHub Repo](https://github.com/Javeria-Sheraz/Finger-Controlled-Screen-Cursor)
-
----
-
-## ✨ Features
-
-* **Move Cursor**: Raise your index finger to move the cursor on screen.
+* **Move Cursor**: Raise your index finger and thumb to move the cursor on screen.
 * **Click**: Bring thumb and index finger together for a click action.
-* **Scroll**: Raise both index and middle fingers and move them close to scroll.
+* **Scroll**: Raise both index and middle fingers and move them on top of each other to scroll.
 
 ---
 
-## 🛠️ Technologies Used
+### ▶️ How to Run
 
-* **Python**
-* **OpenCV**
-* **MediaPipe**
-* **Autopy**
-* **PyAutoGUI**
 
----
+### 1. Open your IDE or terminal window.
 
-## 📁 Folder Structure
-
-```
-📦Finger-Controlled-Screen-Cursor
- ┣ 📜handTrackingModule.py     # Custom hand detector module (modified from GitHub repo)
- ┣ 📜main.py                   # Main script for gesture-controlled mouse
- ┗ 📄README.md                 # Project documentation
-```
-
----
-
-## ▶️ How to Run
-
-1. **Clone the repository**
+### 2. Clone the repository:
 
    ```
    git clone https://github.com/Javeria-Sheraz/Finger-Controlled-Screen-Cursor.git
    cd Finger-Controlled-Screen-Cursor
    ```
 
-2. **Install dependencies**
-   Make sure you have Python 3 installed. Then install required libraries:
+### 3. Create a virtual environment:
 
-   ```
-   pip install opencv-python mediapipe autopy pyautogui
-   ```
+```
+python -m venv venv
+```
+Ensure the venv folder is created in the cloned repo folder
 
-3. **Run the code**
+### 4. Activate the environment (for CMD terminal):
 
-   ```
-   python main.py
-   ```
+```
+venv\Scripts\activate
+```
 
-4. **Use your webcam** to control the cursor, click, and scroll using your fingers!
+> ⚠️ If you're using PowerShell and encounter script permission errors:
 
----
+```
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+.\venv\Scripts\Activate.ps1
+```
 
-## 📸 Demo
+### 5. Ensure `required_libraries.txt` is in the same folder. Install the required libraries:
 
-[https://github.com/Javeria-Sheraz/Finger-Controlled-Screen-Cursor/assets/your-demo-video-link.mp4](https://github.com/Javeria-Sheraz/Finger-Controlled-Screen-Cursor/assets/your-demo-video-link.mp4) *(Upload demo if available)*
+```
+pip install -r required_libraries.txt
+```
+### 6. Run the main file:
+
+```
+python screenmouse.py
+```
+
+ **Use your webcam** to control the cursor, click, and scroll using your fingers!
 
 ---
 
@@ -84,17 +66,16 @@ Built using **OpenCV**, **MediaPipe**, **Autopy**, and **PyAutoGUI**, this proje
 
 ---
 
-## 🙋‍♀️ Author
-
 **Javeria Sheraz**
 [LinkedIn](https://www.linkedin.com/in/javeria-sheraz) • [GitHub](https://github.com/Javeria-Sheraz)
 
 ---
 
-## 📄 License
+## 📁 Folder Structure
 
-This project is open source and available under the [MIT License](LICENSE).
-
----
-
-Would you like help generating a [demo video for this README](f) or adding [badges and visuals](f) for a more polished look?
+```
+📦Finger-Controlled-Screen-Cursor
+ ┣ 📜handTrackingModule.py     # Custom hand detector module (modified from GitHub repo)
+ ┣ 📜screenmouse.py                   # Main script for gesture-controlled mouse
+ ┗ 📄README.md                 # Project documentation
+```
