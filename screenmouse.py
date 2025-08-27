@@ -30,7 +30,7 @@ while True:
     img = detector.findHands(img)
     lmList = detector.findPosition(img)
 
-    # lmList is the list on landmarks on hands extracted by mediapipe
+    # lmList is the list of landmarks on hands extracted by mediapipe
     if len(lmList)!=0:
         # coordinates for index finger, index finger tip =8
         x1, y1 = lmList[8][1:]
@@ -106,4 +106,5 @@ while True:
         break
 
 cap.release()
+
 cv2.destroyAllWindows()
