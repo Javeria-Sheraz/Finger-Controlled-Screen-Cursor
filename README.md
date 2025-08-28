@@ -5,9 +5,9 @@ Built using **OpenCV**, **MediaPipe**, **Autopy**, and **PyAutoGUI** libraries, 
 
 ## ✨ Features/Instructions
 
-* **Move Cursor**: Raise your index finger and thumb to move the cursor on screen.
+* **Move Cursor**: Raise your index finger and thumb to move the cursor on the screen.
 * **Click**: Bring thumb and index finger together for a click action.
-* **Scroll**: Raise both index and middle fingers and move them on top of each other to scroll.
+* **Scroll**: Raise both index and middle fingers and bring them together to scroll.
 
 ---
 
@@ -74,13 +74,4 @@ python screenmouse.py
 **Javeria Sheraz**
 [LinkedIn](https://www.linkedin.com/in/javeria-sheraz) • [GitHub](https://github.com/Javeria-Sheraz)
 
----
 
-## 📁 Folder Structure
-
-```
-📦Finger-Controlled-Screen-Cursor
- ┣ 📜handTrackingModule.py     # Custom hand detector module (modified from GitHub repo)
- ┣ 📜screenmouse.py                   # Main script for gesture-controlled mouse
- ┗ 📄README.md                 # Project documentation
-```
